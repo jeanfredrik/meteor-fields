@@ -1,0 +1,20 @@
+<template name="categoryField">
+	<div class="field-template-category {{wrapperClasses}}" data-field="{{fieldName}}">
+		<label>
+			{{#if label}}
+			<span class="control-label">{{label}}</span>
+			{{/if}}
+			<input type="hidden" class="input {{fieldClasses}}" name="{{fieldName}}" value="{{fieldValue}}">
+			<input type="{{fieldType}}" class="input-helper {{fieldClasses}}" {{inputAttrs}}>
+			<input type="{{fieldType}}" class="input-formatted {{fieldClasses}}" value="{{fieldValueFormatted}}" {{inputAttrs}}>
+			<ul class="option-list">
+				{{#each fieldOptions}}
+					<li class="option">
+						{{label}}
+					</li>
+				{{/each}}
+			</ul>
+		</label>
+	</div>
+	
+</template>

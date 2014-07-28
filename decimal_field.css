@@ -1,0 +1,6 @@
+.field-template-decimal:not([data-editing]) .input {
+	display: none;
+}
+.field-template-decimal[data-editing] .input-helper {
+	display: none;
+}
