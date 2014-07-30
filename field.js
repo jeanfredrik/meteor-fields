@@ -41,6 +41,8 @@
 					'value',
 					'mask',
 					'maskReverse',
+					'formattedValue',
+					'optionList',
 				]);
 			},
 			fieldValueFormatted: function() {
