@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "jwerty": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "jwerty": {
+        "path": "."
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
-.field-template-category:not([data-editing]) .input {
+.field-template-category:not([data-editing]) .input-helper {
 	display: none;
 }
-.field-template-category[data-editing] .input-helper {
+.field-template-category[data-editing] .input-formatted {
 	display: none;
 }
