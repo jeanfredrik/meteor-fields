@@ -26,6 +26,7 @@
 			$target.trigger('blur');
 		},
 		'focus .input-helper': function(event, templateInstance) {
+			event.stopPropagation();
 			$(templateInstance.firstNode).attr('data-editing', 'true');
 			templateInstance.$('.input').trigger('focus');
 		},
