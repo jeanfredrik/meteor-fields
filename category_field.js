@@ -131,6 +131,9 @@
 			helperSetFocus('none');
 			$(templateInstance.firstNode).removeAttr('data-editing');
 		},
+		'blur .input-formatted': function(event, templateInstance) {
+			event.stopPropagation();
+		},
 		'keydown .input-helper': function(event, templateInstance) {
 			//console.log(event, this);
 			var optionsListContainer = templateInstance.$('.option-list-container')[0];

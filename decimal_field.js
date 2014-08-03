@@ -30,6 +30,9 @@
 			$(templateInstance.firstNode).attr('data-editing', 'true');
 			templateInstance.$('.input').trigger('focus');
 		},
+		'blur .input-helper': function(event, templateInstance) {
+			event.stopPropagation();
+		},
 		'focus .input': function(event, templateInstance) {
 			var $target = $(event.target);
 		},

@@ -85,6 +85,8 @@
 			var doc = _.unwrap(context.doc);
 			switch(typeof doc) {
 				case 'string':
+				//console.log(this.collection(context), this.collection(context).findOne(doc))
+				//console.log(this.collection(context).findOne(doc));
 				return this.collection(context).findOne(doc);
 				break;
 				
