@@ -105,9 +105,10 @@
 		*/
 		
 		Deps.autorun(function() {
-			helperValue(guid); helperHasFocus(guid);
+			var value = helperValue(guid);
+			helperHasFocus(guid);
 			Meteor.defer(function() {
-				$('.option', optionsListContainer).removeClass('active').first().addClass('active');
+				$('.option', optionsListContainer).removeClass('active').first().toggleClass('active', value != '');
 			});
 		});
 	});
