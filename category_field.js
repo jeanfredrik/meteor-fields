@@ -141,7 +141,7 @@
 			if(jwerty.is('enter', event)) {
 				$target.trigger('accept');
 				$target.trigger('blur');
-			} else if(jwerty.is('tab', event)) {
+			} else if(jwerty.is('tab/shift+tab', event)) {
 				$target.trigger('accept');
 			} else if(jwerty.is('escape', event)) $target.trigger('escape');
 			else if(jwerty.is('arrow-down', event)) {
