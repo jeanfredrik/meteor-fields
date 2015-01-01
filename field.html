@@ -1,0 +1,11 @@
+<template name="field">
+	{{#if UI.contentBlock}}
+		{{> UI.contentBlock this}}
+	{{else}}
+		{{> fieldInput}}
+	{{/if}}
+</template>
+
+<template name="fieldInput">
+	{{> Template.dynamic template=template}}
+</template>

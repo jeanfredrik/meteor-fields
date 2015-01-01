@@ -1,9 +1,0 @@
-{
-  "name": "jwerty",
-  "description": "Awesome handling of keyboard events",
-  "homepage": "https://github.com/jeanfredrik/meteor-jwerty",
-  "author": "jeanfredrik <jeanfredrik@gmail.com>",
-  "version": "0.3.3",
-  "git": "https://github.com/jeanfredrik/meteor-jwerty.git",
-  "packages": {}
-}

@@ -1,7 +1,5 @@
-Tinytest.add('jwerty - Simple Test', function (test) {
-  test.equal(
-    typeof jwerty,
-    'object',
-    'jwerty exists'
-  );
+// Write your tests here!
+// Here is an example.
+Tinytest.add('example', function (test) {
+  test.equal(true, true);
 });

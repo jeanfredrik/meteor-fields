@@ -1,33 +1,31 @@
 Package.describe({
-	summary: 'Enhanced and extra form fields'
+	name: 'jeanfredrik:fields',
+	summary: 'Reactive inputs that update Mongo documents or ReactiveDicts like Session on edit',
+	version: '0.1.0',
+	git: ' /* Fill me in! */ '
 });
 
-Package.on_use(function(api, where) {
-	api.use(['session', 'handlebars', 'underscore', 'templating', 'jwerty', 'deps'], 'client');
+Package.onUse(function(api) {
+	api.versionsFrom('1.0');
+	api.use('templating', 'client');
+	api.use('reactive-dict', 'client');
+	api.use('minimongo', 'client');
+	api.use('underscore', 'client');
 
-	api.add_files([
-		'lib/underscore_mixins.js',
-		'field.js',
-		
-		'text_field.html',
-		'text_field.js',
-		
-		'date_field.html',
-		'date_field.js',
-		
-		'decimal_field.html',
-		'decimal_field.js',
-		'decimal_field.css',
-		
-		'category_field.html',
-		'category_field.js',
-		'category_field.css',
-		
-	], 'client');
+	api.addFiles('field.html', 'client');
+	api.addFiles('field.js', 'client');
+
+	api.addFiles('text-field.html', 'client');
+	api.addFiles('text-field.js', 'client');
+
+	api.addFiles('checkbox-field.html', 'client');
+	api.addFiles('checkbox-field.js', 'client');
+
+	api.export('Fields');
 });
 
-Package.on_test(function (api) {
-  api.use('fields');
-
-  api.add_files('tests.js', ['client', 'server']);
+Package.onTest(function(api) {
+	api.use('tinytest');
+	api.use('jeanfredrik:fields');
+	api.addFiles('tests.js');
 });
