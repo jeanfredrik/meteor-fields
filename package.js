@@ -1,8 +1,8 @@
 Package.describe({
 	name: 'jeanfredrik:fields',
-	summary: 'Reactive inputs that update Mongo documents or ReactiveDicts like Session on edit',
+	summary: 'Reactive inputs that update Mongo documents or ReactiveDicts (like Session) on edit',
 	version: '0.1.0',
-	git: ' /* Fill me in! */ '
+	git: 'https://github.com/jeanfredrik/meteor-fields.git'
 });
 
 Package.onUse(function(api) {
